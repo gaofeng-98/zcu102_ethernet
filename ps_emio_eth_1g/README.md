@@ -74,7 +74,7 @@ Once packaged, the`boot.scr`, `BOOT.bin` and `image.ub` files (in the `PetaLinux
 ### **Performance:**
 **NOTE:** These are rough performance numbers - your actual performance may vary based on a variety of factors such as network topology and kernel load.
 
-These performance numbers reflect an MTU of 1500.
+These performance numbers reflect an MTU of 1500 (ZCU102 connecting to a windows PC running iperf server).
 ```
 xilinx-zcu102-20221:~$ iperf3 -c 192.168.1.2
 Connecting to host 192.168.1.2, port 5201
