@@ -75,8 +75,8 @@ iperf3 -s -p 5103 -A 3 &
 ```
 + Enable RFS(receive flow steering) & Set R/W buffer size
 ```
-//RFS is disabled by default. To enable RFS, we must edit rps_sock_flow_entries and rps_flow_cnt
-//For details refer : https://www.kernel.org/doc/Documentation/networking/scaling.txt
+# RFS is disabled by default. To enable RFS, we must edit rps_sock_flow_entries and rps_flow_cnt
+# For details refer : https://www.kernel.org/doc/Documentation/networking/scaling.txt
 echo 32768 > /proc/sys/net/core/rps_sock_flow_entries
 echo 2048 > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
 echo 2048 > /sys/class/net/eth1/queues/rx-1/rps_flow_cnt
