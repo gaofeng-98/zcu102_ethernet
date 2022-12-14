@@ -34,6 +34,7 @@ Vitis offers several Ethernet-based example application projects which leverage 
 ### **PetaLinux**:
 
 Enter the `Software/PetaLinux/` directory. From the command line run the following:
+
 `petalinux-create -t project -s ps_mio_eth_1g.bsp -n psemio_plnx`
 
 `cd psemio_plnx`
@@ -97,7 +98,7 @@ iperf Done.
 
 ---
 
-## **Boot LOG**
+## **Boot Log**
 ```
 Xilinx Zynq MP First Stage Boot Loader
 Release 2022.1   Apr 11 2022  -  09:29:50
