@@ -30,12 +30,14 @@ Vitis offers several Ethernet-based example application projects which leverage 
 ### **PetaLinux**:
 
 Enter the `Software/PetaLinux/` directory. From the command line run the following:
-```
-petalinux-create -t project -s ps_mio_eth_1g.bsp -n psmio_plnx
-cd psmio_plnx
-petalinux-config --get-hw-description ../../../Hardware/pre-built/ --silentconfig
-petalinux-build
-```
+`petalinux-create -t project -s ps_mio_eth_1g.bsp -n psmio_plnx`
+
+`cd psmio_plnx`
+
+`petalinux-config --get-hw-description ../../../Hardware/pre-built/ --silentconfig`
+
+`petalinux-build`
+
 The PetaLinux project will be built using the configurations in the BSP.
 
 Once the build is complete, the built images can be found in the `PetaLinux/images/linux/`
@@ -75,6 +77,9 @@ Connecting to host 192.168.1.2, port 5201
 
 iperf Done.
 ```
+---
+## **Known Issues**
+
 ---
 ### **boot log:**
 ```
@@ -826,6 +831,3 @@ xilinx-zcu102-20221 login: [   14.270736] macb ff0e0000.ethernet eth0: Link is U
 
 xilinx-zcu102-20221 login:
 ```
-## **Known Issues**
-
----
