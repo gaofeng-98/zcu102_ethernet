@@ -35,7 +35,7 @@ Vitis offers several Ethernet-based example application projects which leverage 
 
 Enter the `Software/PetaLinux/` directory. From the command line run the following:
 
-`petalinux-create -t project -s ps_mio_eth_1g.bsp -n psemio_plnx`
+`petalinux-create -t project -s ps_emio_eth_1g.bsp -n psemio_plnx`
 
 `cd psemio_plnx`
 

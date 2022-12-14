@@ -44,7 +44,7 @@ The PetaLinux project will be built using the configurations in the BSP.
 Once the build is complete, the built images can be found in the `PetaLinux/images/linux/`
 directory. To package these images for SD boot, run the following from the `PetaLinux` directory:
 
-`petalinux-package --boot --fpga --u-boot --force`
+`petalinux-package --boot --u-boot --force`
 
 Once packaged, the`boot.scr`, `BOOT.bin` and `image.ub` files (in the `PetaLinux/images/linux` directory) can be copied to an SD card, and used to boot.
 
