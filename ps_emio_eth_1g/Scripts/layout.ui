@@ -1,0 +1,77 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.769603",
+   "Default View_TopLeft":"-300,-32",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/c_counter_binary_0|/c_counter_binary_1|/c_counter_binary_2|/constants|/gig_ethernet_pcs_pma_0|/xlslice_0|/xlslice_1|/xlslice_2|/xlslice_3|/xlslice_4|/xlslice_5|/zynq_ultra_ps_e_0|",
+   "PinnedPorts":"gmii_rx_clk_led|link_status_led|link_sync_led|mdc_clk_led|pcs_clk_led|pl_reset_led|sfp_tx_dis|xcvr_rst_done_led|gtrefclk_in|sfp|",
+   "comment_0":"PS-EMIO 1000BASE-X ETHERNET",
+   "commentid":"comment_0",
+   "font_comment_0":"14",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port gtrefclk_in -pg 1 -lvl 0 -x -80 -y 20 -defaultsOSRD
+preplace port sfp -pg 1 -lvl 3 -x 1400 -y 140 -defaultsOSRD
+preplace portBus gmii_rx_clk_led -pg 1 -lvl 3 -x 1400 -y 20 -defaultsOSRD
+preplace portBus link_status_led -pg 1 -lvl 3 -x 1400 -y 40 -defaultsOSRD
+preplace portBus link_sync_led -pg 1 -lvl 3 -x 1400 -y 60 -defaultsOSRD
+preplace portBus mdc_clk_led -pg 1 -lvl 3 -x 1400 -y 80 -defaultsOSRD
+preplace portBus pcs_clk_led -pg 1 -lvl 3 -x 1400 -y 100 -defaultsOSRD
+preplace portBus pl_reset_led -pg 1 -lvl 3 -x 1400 -y 120 -defaultsOSRD
+preplace portBus sfp_tx_dis -pg 1 -lvl 3 -x 1400 -y 160 -defaultsOSRD
+preplace portBus xcvr_rst_done_led -pg 1 -lvl 3 -x 1400 -y 180 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 1 -x 210 -y 60 -defaultsOSRD
+preplace inst c_counter_binary_1 -pg 1 -lvl 1 -x 210 -y 160 -defaultsOSRD
+preplace inst c_counter_binary_2 -pg 1 -lvl 1 -x 210 -y 260 -defaultsOSRD
+preplace inst constants -pg 1 -lvl 1 -x 210 -y 410 -defaultsOSRD
+preplace inst gig_ethernet_pcs_pma_0 -pg 1 -lvl 1 -x 210 -y 720 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -x 900 -y 40 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -x 900 -y 140 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 2 -x 900 -y 240 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 2 -x 900 -y 340 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 2 -x 900 -y 440 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 2 -x 900 -y 540 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 2 -x 900 -y 740 -defaultsOSRD
+preplace netloc Net 1 0 2 0 910 420
+preplace netloc Net1 1 0 3 10 520 450J 970 1320
+preplace netloc Net2 1 1 2 510 910 1290
+preplace netloc c_counter_binary_0_Q 1 1 1 490 40n
+preplace netloc c_counter_binary_1_Q 1 1 1 510 160n
+preplace netloc c_counter_binary_2_Q 1 1 1 500 260n
+preplace netloc gig_ethernet_pcs_pma_0_gmii_rxclk 1 0 3 20 530 470J 920 1310
+preplace netloc gig_ethernet_pcs_pma_0_resetdone 1 1 2 440 930 1380J
+preplace netloc gig_ethernet_pcs_pma_0_status_vector 1 1 1 490 140n
+preplace netloc gig_ethernet_pcs_pma_0_userclk2_out 1 0 2 20 -10 440
+preplace netloc xlconstant_0_dout 1 0 2 -30 0 410
+preplace netloc xlconstant_0_dout1 1 0 3 -10 980 NJ 980 1360
+preplace netloc xlconstant_2_dout 1 0 2 0 510 400
+preplace netloc xlconstant_3_dout 1 0 2 10 920 430
+preplace netloc xlconstant_4_dout 1 0 2 20 930 410
+preplace netloc xlconstant_5_dout 1 1 2 480 950 1370J
+preplace netloc xlslice_0_Dout 1 2 1 1290 40n
+preplace netloc xlslice_1_Dout 1 2 1 1300 40n
+preplace netloc xlslice_2_Dout 1 2 1 1320 60n
+preplace netloc xlslice_3_Dout 1 2 1 1340 80n
+preplace netloc xlslice_4_Dout 1 2 1 1310 20n
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 -40 990 NJ 990 1300
+preplace netloc zynq_ultra_ps_e_0_MDIO_ENET0 1 0 3 -50 960 NJ 960 1330
+preplace netloc zynq_ultra_ps_e_0_GMII_ENET0 1 0 3 -20 940 NJ 940 1340
+preplace netloc gtrefclk_in_1 1 0 1 -60 20n
+preplace netloc gig_ethernet_pcs_pma_0_sfp 1 1 2 460 900 1350J
+preplace cgraphic comment_3 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_2 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_1 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_0 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_6 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_5 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_4 place top 0 0 textcolor 4 linecolor 3
+levelinfo -pg 1 -80 210 900 1400
+pagesize -pg 1 -db -bbox -sgen -210 -20 1620 1000
+",
+   "linktoobj_comment_0":"",
+   "linktotype_comment_0":"bd_design"
+}
+0
+{
+   "/comment_0":"comment_0"
+}

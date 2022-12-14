@@ -1,0 +1,70 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.70354",
+   "Default View_TopLeft":"-824,0",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/rx_data_fifo|/rx_rst_n|/tx_data_fifo|/tx_rst_n|/xxv_ethernet_0|/zups|/other_perph|/axi_dma_hier|",
+   "PinnedPorts":"gt_ref_clk|gt_rx|gt_tx|",
+   "comment_0":"PL ETHERNET 10G",
+   "commentid":"comment_0|",
+   "font_comment_0":"14",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port gt_ref_clk -pg 1 -lvl 0 -x -480 -y 20 -defaultsOSRD
+preplace port gt_rx -pg 1 -lvl 0 -x -480 -y 40 -defaultsOSRD
+preplace port gt_tx -pg 1 -lvl 3 -x 960 -y 70 -defaultsOSRD
+preplace portBus sfp_tx_dis -pg 1 -lvl 3 -x 960 -y 1010 -defaultsOSRD
+preplace inst rx_data_fifo -pg 1 -lvl 2 -x 617 -y 592 -defaultsOSRD
+preplace inst rx_rst_n -pg 1 -lvl 2 -x 617 -y 850 -defaultsOSRD
+preplace inst tx_data_fifo -pg 1 -lvl 2 -x 617 -y 450 -defaultsOSRD
+preplace inst tx_rst_n -pg 1 -lvl 2 -x 617 -y 742 -defaultsOSRD
+preplace inst xxv_ethernet_0 -pg 1 -lvl 1 -x -30 -y 590 -defaultsOSRD
+preplace inst zups -pg 1 -lvl 1 -x -30 -y 990 -defaultsOSRD
+preplace inst axi_dma_hier -pg 1 -lvl 2 -x 617 -y 260 -defaultsOSRD -resize 335 192
+preplace inst other_perph -pg 1 -lvl 2 -x 617 -y 990 -defaultsOSRD
+preplace netloc In1_1 1 0 3 -430 40 NJ 40 900
+preplace netloc Net 1 0 2 -350 270 210
+preplace netloc Net1 1 0 2 -260 280 260
+preplace netloc Net2 1 0 3 -310 80 N 80 940
+preplace netloc axi_dma_hier_mm2s_introut 1 0 3 -390 50 NJ 50 870
+preplace netloc axi_dma_hier_mm2s_prmry_reset_out 1 0 3 -360 90 NJ 90 850
+preplace netloc axi_dma_hier_s2mm_prmry_reset_out 1 0 3 -330 100 NJ 100 840
+preplace netloc axi_timer_0_interrupt 1 0 3 -410 110 N 110 930
+preplace netloc other_perph_sfp_tx_dis 1 2 1 N 1010
+preplace netloc tx_rst_n_Res 1 0 3 -340 290 230 682 810
+preplace netloc util_vector_logic_0_Res 1 0 3 -380 220 310 130 830
+preplace netloc xlconstant_0_dout 1 0 3 -320 120 NJ 120 920
+preplace netloc xlconstant_1_dout 1 0 3 -240 300 300 370 820
+preplace netloc xxv_ethernet_0_tx_clk_out_0 1 0 2 -370 230 240
+preplace netloc xxv_ethernet_0_user_rx_reset_0 1 1 1 250 630n
+preplace netloc xxv_ethernet_0_user_tx_reset_0 1 1 1 240 670n
+preplace netloc zups_Res 1 0 2 -280 240 200
+preplace netloc zups_clk_100M 1 0 2 -290 250 190
+preplace netloc zups_peripheral_aresetn 1 0 2 -250 310 280
+preplace netloc zups_peripheral_aresetn_100M 1 0 2 -270 260 180
+preplace netloc axi_dma_hier_M_AXIS_MM2S 1 1 2 320 140 820
+preplace netloc axi_dma_hier_M_AXI_MM2S 1 0 3 -440 10 N 10 880
+preplace netloc axi_dma_hier_M_AXI_S2MM 1 0 3 -420 30 N 30 860
+preplace netloc axi_dma_hier_M_AXI_SG 1 0 3 -400 20 N 20 890
+preplace netloc axis_data_fifo_0_M_AXIS 1 0 3 -300 60 NJ 60 910
+preplace netloc gt_ref_clk_1 1 0 1 -450 20n
+preplace netloc gt_rx_1 1 0 1 -460 40n
+preplace netloc rx_data_fifo_M_AXIS 1 1 2 330 672 810
+preplace netloc xxv_ethernet_0_axis_rx_0 1 1 1 220 470n
+preplace netloc xxv_ethernet_0_gt_tx 1 1 2 270 70 NJ
+preplace netloc zups_M00_AXI 1 1 1 290 210n
+preplace netloc zups_M01_AXI 1 0 2 -230 320 170
+preplace netloc zups_M02_AXI 1 1 1 240 960n
+preplace cgraphic comment_0 place left 451 162 textcolor 4 linecolor 3
+levelinfo -pg 1 -480 -30 617 960
+pagesize -pg 1 -db -bbox -sgen -600 -710 1120 2420
+",
+   "linktoobj_comment_0":"",
+   "linktotype_comment_0":"bd_design"
+}
+{
+   ""da_axi4_cnt"":"5"
+}
+{
+   "/comment_3":"comment_0"
+}

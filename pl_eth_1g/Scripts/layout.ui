@@ -1,0 +1,66 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.508736",
+   "Default View_TopLeft":"-1008,-92",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/axi_eth_0|/axi_eth_0_dma|/clk_wiz_0|/other_perph|/zynq_ps|",
+   "PinnedPorts":"axi_lite_clk_led|axil_reset_led|mgt_clk_led|rx_clk_led|sfp_tx_dis|mgt_clk|sfp|",
+   "comment_0":"PL ETHERNET 1000BASE-X DESIGN",
+   "commentid":"comment_0",
+   "font_comment_0":"14",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port mgt_clk -pg 1 -lvl 0 -x -200 -y 20 -defaultsOSRD
+preplace port sfp -pg 1 -lvl 3 -x 1140 -y 100 -defaultsOSRD
+preplace port port-id_axil_reset_led -pg 1 -lvl 3 -x 1140 -y 0 -defaultsOSRD
+preplace portBus axi_lite_clk_led -pg 1 -lvl 3 -x 1140 -y 20 -defaultsOSRD
+preplace portBus mgt_clk_led -pg 1 -lvl 3 -x 1140 -y 60 -defaultsOSRD
+preplace portBus rx_clk_led -pg 1 -lvl 3 -x 1140 -y 80 -defaultsOSRD
+preplace portBus sfp_tx_dis -pg 1 -lvl 3 -x 1140 -y 120 -defaultsOSRD
+preplace inst axi_eth_0 -pg 1 -lvl 1 -x 200 -y 170 -swap {24 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 0 25 26 27 28 29 36 31 32 33 34 35 30 37 38 39 40 41 42 43 44 45 46 47 48 49 51 59 60 54 57 67 56 55 64 53 61 62 52 63 58 65 66 50 68} -defaultsOSRD
+preplace inst axi_eth_0_dma -pg 1 -lvl 1 -x 200 -y 720 -swap {96 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 61 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 78 48 49 50 51 52 53 54 55 56 57 58 59 60 90 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 47 79 80 81 82 83 84 85 86 87 88 89 17 91 92 93 94 95 0 97 98 99 100 101 103 104 105 106 102 111 112 110 109 107 108} -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 200 -y 510 -swap {1 0 2 3} -defaultsOSRD
+preplace inst other_perph -pg 1 -lvl 2 -x 770 -y 80 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 26 27 23 22 20 21 24 25 18 19} -defaultsOSRD
+preplace inst zynq_ps -pg 1 -lvl 2 -x 770 -y 290 -defaultsOSRD
+preplace netloc axi_eth_0_dma_mm2s_cntrl_reset_out_n 1 0 2 -100 350 450
+preplace netloc axi_eth_0_dma_mm2s_introut 1 1 1 500 290n
+preplace netloc axi_eth_0_dma_mm2s_prmry_reset_out_n 1 0 2 -110 360 420
+preplace netloc axi_eth_0_dma_s2mm_introut 1 1 1 510 310n
+preplace netloc axi_eth_0_dma_s2mm_prmry_reset_out_n 1 0 2 -120 370 410
+preplace netloc axi_eth_0_dma_s2mm_sts_reset_out_n 1 0 2 -130 380 390
+preplace netloc axi_eth_0_interrupt 1 1 1 450 230n
+preplace netloc axi_eth_0_rxuserclk2_out 1 1 1 450 100n
+preplace netloc axi_eth_0_userclk2_out 1 1 1 450 120n
+preplace netloc clk_wiz_0_clk_out1 1 0 2 -110 -30 440
+preplace netloc other_perph_Dout1 1 2 1 990 80n
+preplace netloc other_perph_Dout2 1 2 1 990 60n
+preplace netloc other_perph_Dout3 1 2 1 970 20n
+preplace netloc other_perph_Res 1 2 1 960 0n
+preplace netloc other_perph_dout 1 2 1 970 110n
+preplace netloc other_perph_interrupt 1 1 2 520 -60 940
+preplace netloc s_axi_aclk_1 1 0 3 -170 -60 470 -70 950
+preplace netloc s_axi_aresetn_1 1 0 3 -160 400 470 410 920
+preplace netloc zynq_ps_peripheral_reset 1 0 3 -100 420 NJ 420 930
+preplace netloc S_AXI_1 1 1 2 530 -40 920
+preplace netloc axi_eth_0_dma_M_AXIS_CNTRL 1 0 2 -100 -20 430
+preplace netloc axi_eth_0_dma_M_AXIS_MM2S 1 0 2 -140 440 380
+preplace netloc axi_eth_0_dma_M_AXI_MM2S 1 1 1 480 250n
+preplace netloc axi_eth_0_dma_M_AXI_S2MM 1 1 1 490 270n
+preplace netloc axi_eth_0_dma_M_AXI_SG 1 1 1 460 230n
+preplace netloc axi_eth_0_m_axis_rxd 1 0 2 -120 390 400
+preplace netloc axi_eth_0_m_axis_rxs 1 0 2 -150 -10 400
+preplace netloc axi_eth_0_sfp 1 1 2 450 -30 980J
+preplace netloc mgt_clk_1 1 0 1 -180 20n
+preplace netloc zynq_ps_M00_AXI 1 0 3 -110 430 NJ 430 940
+preplace netloc zynq_ps_M01_AXI 1 0 3 -120 -50 NJ -50 930
+preplace cgraphic comment_0 place top 0 0 textcolor 4 linecolor 3
+levelinfo -pg 1 -200 200 770 1140
+pagesize -pg 1 -db -bbox -sgen -310 -80 1330 1830
+",
+   "linktoobj_comment_0":"",
+   "linktotype_comment_0":"bd_design"
+}
+0
+{
+   "/comment_0":"comment_0"
+}
