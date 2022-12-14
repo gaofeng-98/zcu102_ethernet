@@ -30,6 +30,7 @@ Vitis offers several Ethernet-based example application projects which leverage 
 ### **PetaLinux**:
 
 Enter the `Software/PetaLinux/` directory. From the command line run the following:
+
 `petalinux-create -t project -s ps_mio_eth_1g.bsp -n psmio_plnx`
 
 `cd psmio_plnx`
@@ -46,6 +47,10 @@ directory. To package these images for SD boot, run the following from the `Peta
 `petalinux-package --boot --fpga --u-boot --force`
 
 Once packaged, the`boot.scr`, `BOOT.bin` and `image.ub` files (in the `PetaLinux/images/linux` directory) can be copied to an SD card, and used to boot.
+
+---
+
+## **Known Issues**
 
 ---
 
@@ -78,9 +83,7 @@ Connecting to host 192.168.1.2, port 5201
 iperf Done.
 ```
 ---
-## **Known Issues**
 
----
 ### **boot log:**
 ```
 Xilinx Zynq MP First Stage Boot Loader
