@@ -54,6 +54,21 @@ Once packaged, the`boot.scr`, `BOOT.bin` and `image.ub` files (in the `PetaLinux
 
 ---
 
+
+## **Known Issues**
+
+1. Two patches are included in the PetaLinux project to address a clocking/reset issue involving the PCS/PMA IP. More information about the reset issue can be found in AR# 72806:
+
+    https://www.xilinx.com/support/answers/72806.html
+
+2. On boot, the following error will be seen:
+
+    `[    6.929736] macb ff0b0000.ethernet eth0: unable to generate target frequency: 125000000 Hz`
+
+    This can be safely ignored.
+
+---
+
 ## **Validation**
 
 ### **Performance:**
@@ -84,19 +99,6 @@ iperf Done.
 ```
 ---
 
-## **Known Issues**
-
-1. Two patches are included in the PetaLinux project to address a clocking/reset issue involving the PCS/PMA IP. More information about the reset issue can be found in AR# 72806:
-
-    https://www.xilinx.com/support/answers/72806.html
-
-2. On boot, the following error will be seen:
-
-    `[    6.929736] macb ff0b0000.ethernet eth0: unable to generate target frequency: 125000000 Hz`
-
-    This can be safely ignored.
-
----
 
 ## **Boot Log**
 ```
