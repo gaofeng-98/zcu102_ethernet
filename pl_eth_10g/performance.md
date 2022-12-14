@@ -41,15 +41,18 @@
 
 </table>
 
-+ These benchmark performance numbers were obtained by connecting Xilinx boards to Linux PC.
-+ OS：Ubuntu18.04.1
-+ CPU：Intel® Xeon(R) W-2145 CPU @ 3.70GHz × 16 
-+ NIC：Intel Corporation 82599ES 10-Gigabit SFI/SFP+ Network Connection. 
-+ The tools used is iperf3
++ These benchmark performance numbers were obtained by connecting ZCU102 board to Linux server. The tools used is iperf3
 + Performance benchmark numbers mentioned in below tables are for reference and dependent on multiple factors i.e setup , vivado design configuration  etc. 
 + NOTE: CPU utilization reported in below performance tables is an aggregate of all CPU's. i.e on ZynqMP platform, it reports combined utilization of all four A53 cores.
 
+### Setup Details
++ Host Setup: Dell System Precision 5820 Tower
++ Iperf: iperf 3-CURRENT
++ OS: #46~18.04.1-Ubuntu SMP Fri Jul 10 07:21:24 UTC 2020
++ NIC: Intel Corporation 82599ES 10-Gigabit SFI/SFP+ Network Connection
++ MEM: 64G
 
+---
 # Table of content
 |   | TCP | UDP |
 |----------|----------|----------|
@@ -58,7 +61,7 @@
 | RX | [TCP_RX_MTU1500](#tcp_rx_mtu1500) | [UDP_RX_MTU1500](#udp_rx_mtu1500) |
 |    | [TCP_RX_MTU9000](#tcp_rx_mtu9000) | [UDP_RX_MTU9000](#udp_rx_mtu9000) |
 
-
+---
 # Pre-requisites:
 + Set Ethernet AXI MCDMA TX interrupt affinity to core-1
 ```
@@ -89,7 +92,8 @@ echo 16777216 > /proc/sys/net/core/wmem_default
 server:~# iperf3 -s -p 5101 & ; iperf3 -s -p 5102 & ; iperf3 -s -p 5103 & ; iperf3 -s -p 5104 &
 ```
 
-
+---
+# Test Details
 ## TCP_TX_MTU1500
 ```
 #commands in a_test_eth.sh
