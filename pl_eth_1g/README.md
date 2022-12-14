@@ -37,7 +37,7 @@ Enter the `Software/PetaLinux/` directory. From the command line run the followi
 
 `petalinux-create -t project -s pl_eth_1g.bsp -n pl_1g_plnx`
 
-`cd psemio_plnx`
+`cd pl_1g_plnx`
 
 `petalinux-config --get-hw-description ../../../Hardware/pre-built/ --silentconfig`
 
