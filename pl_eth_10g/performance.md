@@ -73,9 +73,10 @@ iperf3 -s -p 5101 -A 1 &
 iperf3 -s -p 5102 -A 2 &
 iperf3 -s -p 5103 -A 3 &
 ```
-+ Enable RFS(receive flow steering) & Set R/W buffer size
++ Enable RFS(receive flow steering) & Set R/W buffer size(optional)
 ```
 # RFS is disabled by default. To enable RFS, we must edit rps_sock_flow_entries and rps_flow_cnt
+# RFS can solve the UDP receive packet loss problem, but will increase CPU overhead
 # For details refer : https://www.kernel.org/doc/Documentation/networking/scaling.txt
 echo 32768 > /proc/sys/net/core/rps_sock_flow_entries
 echo 2048 > /sys/class/net/eth1/queues/rx-0/rps_flow_cnt
