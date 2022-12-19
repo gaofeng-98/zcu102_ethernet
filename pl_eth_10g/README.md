@@ -59,7 +59,7 @@ Once packaged, the`boot.scr`, `BOOT.bin` and `image.ub` files (in the `PetaLinux
 
 ## **Validation**
 ### **Performance**
-+ for detailed performance report and test steps please refer to performance.md under the same path.
++ for detailed performance report and test steps please refer to `performance.md` under the same path.
 
 ### **Boot Log**
 
